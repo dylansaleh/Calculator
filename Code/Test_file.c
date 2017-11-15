@@ -4,6 +4,7 @@
 * It will then return and print out the result together with the result of the "Expect" statement.
 */
 
+#include "Test_file.h"
 
 /* Recieves 2 integers and adds them together */
 float Addition(float a, float b){
