@@ -7,21 +7,21 @@
 #include "Test_file.h"
 
 /* Recieves 2 integers and adds them together */
-float Addition(float a, float b){
-  return a + b;;
+void Addition(void){
+  TEST_ASSERT_EQUAL_FLOAT (4.0, Addition(2.0, 2.0));
 }
 
 /* Recieves 2 integers and substracts a with b */
-float Substract(float a, float b){
-  return a - b;
+void Substract(void){
+  TEST_ASSERT_EQUAL_FLOAT (4.0, Substract(6.0, 2.0))
 }
 
 /* Recieves 2 integers and multiplies a with b */
-float Multiply(float a, float b){
-  return a * b;
+void Multiply(void){
+  TEST_ASSERT_EQUAL_FLOAT (12.0, Multiply(6.0, 2.0))
 }
 
 /* Recieves 2 integers and divides a with b */
-float Divide(float a, float b){
-  return a / b;
+void Divide(void){
+ TEST_ASSERT_EQUAL_FLOAT (3.0, Divide(6.0, 2.0))
 }
