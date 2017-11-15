@@ -8,24 +8,20 @@
 
 /* Recieves 2 integers and adds them together */
 float Addition(float a, float b){
-  float result = a + b;
-  return result;
+  return a + b;;
 }
 
 /* Recieves 2 integers and substracts a with b */
 float Substract(float a, float b){
-  float result = a - b;
-  return result;
+  return a - b;
 }
 
 /* Recieves 2 integers and multiplies a with b */
 float Multiply(float a, float b){
-  float result = a * b;
-  return result;
+  return a * b;
 }
 
 /* Recieves 2 integers and divides a with b */
 float Divide(float a, float b){
-  float result = a / b;
-  return result;
+  return a / b;
 }
