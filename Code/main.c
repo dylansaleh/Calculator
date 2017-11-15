@@ -1,24 +1,32 @@
-#include "unity/src/unity.h"
-#include "DumbExample.h"
+#include "unity.h"
+#include "Test_File.h"
 
-void test_AverageThreeBytes_should_AverageMidRangeValues(void)
-{
-TEST_ASSERT_EQUAL_HEX8(40, AverageThreeBytes(30, 40, 50));
-TEST_ASSERT_EQUAL_HEX8(40, AverageThreeBytes(10, 70, 40));
-TEST_ASSERT_EQUAL_HEX8(33, AverageThreeBytes(33, 33, 33));
-}
-
-void test_AverageThreeBytes_should_AverageHighValues(void)
-{
-TEST_ASSERT_EQUAL_HEX8(80, AverageThreeBytes(70, 80, 90));
-TEST_ASSERT_EQUAL_HEX8(127, AverageThreeBytes(127, 127, 127));
-TEST_ASSERT_EQUAL_HEX8(84, AverageThreeBytes(0, 126, 126));
-}
-
-int main(void)
-{
+int main(void){
 UNITY_BEGIN();
-RUN_TEST(test_AverageThreeBytes_should_AverageMidRangeValues);
-RUN_TEST(test_AverageThreeBytes_should_AverageHighValues);
+
+TestAddition(void){
+  Actual = Addition(2,3);
+  Expected = 5;
+  AssertEqual(Actual, Expected)
+}
+ 
+TestSubstract(void){
+  Actual = Substract(3,2);
+  Expected = 1;
+  AssertEqual(Actual, Expected)
+} 
+  
+TestMultiply(void){
+  Actual = Multiply(2,3);
+  Expected = 6;
+  AssertEqual(Actual, Expected)
+} 
+
+TestDivide(void){
+  Actual = Divide(10,5);
+  Expected = 2;
+  AssertEqual(Actual, Expected)
+} 
+
 return UNITY_END();
 }
